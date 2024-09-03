@@ -1,6 +1,6 @@
 ﻿void Main()
 {
-    string[] array = { "Russia", "Denmark", "Kazan" };
+    string[] array = ReadStrings("Введите строку: ");
     System.Console.WriteLine("Исходный массив: ");
     PrintArray(array);
     CountSymbols(array);
@@ -44,5 +44,16 @@ void PrintArray(string[] array)
         System.Console.Write(array[i] + "\t");
 }
 
+string[] ReadStrings(string msg)
+{
+    Console.Write(msg);
+    string? input = Console.ReadLine();
+    if (input != null)
+    {
+        string[] wordsArray = input.Split(' ');
+        return wordsArray;
+    }
+    return new string[0];
+}
 
 Main();
