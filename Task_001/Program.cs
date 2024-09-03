@@ -6,7 +6,7 @@
     PrintArray(array);
 }
 
-void CreatingANewArray(string[] array)
+void CountSymbols(string[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -16,7 +16,10 @@ void CreatingANewArray(string[] array)
             count++;
         }
     }
+    System.Console.WriteLine(count);
 }
+
+
 
 void PrintArray(string[] array)
 {
