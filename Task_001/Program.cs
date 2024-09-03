@@ -3,7 +3,6 @@
     string[] array = ReadStrings("Введите строку: ");
     System.Console.WriteLine("Исходный массив: ");
     PrintArray(array);
-    CountSymbols(array);
     FilteredArray(array);
 }
 
