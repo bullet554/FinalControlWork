@@ -1,6 +1,6 @@
 ﻿void Main()
 {
-    string[] array = { "1234", "1567", "-2", "computer science" };
+    string[] array = { "Russia", "Denmark", "Kazan" };
     System.Console.WriteLine("Исходный массив: ");
     PrintArray(array);
     CountSymbols(array);
