@@ -1,6 +1,7 @@
 ﻿void Main()
 {
     string[] array = { "Hello", "2", "world", ":-)" };
+    System.Console.WriteLine("Исходный массив: ");
     PrintArray(array);
     CountSymbols(array);
     FilteredArray(array);
@@ -32,6 +33,9 @@ void FilteredArray(string[] array)
             index++;
         }
     }
+    System.Console.WriteLine();
+    System.Console.WriteLine("Отфильтрованный массив: ");
+    PrintArray(filteredArray);
 }
 
 void PrintArray(string[] array)
