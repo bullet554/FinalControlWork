@@ -1,12 +1,12 @@
 ﻿void Main()
 {
     string[] array = { "Hello", "2", "world", ":-)" };
-
-
     PrintArray(array);
+    CountSymbols(array);
+    FilteredArray(array);
 }
 
-void CountSymbols(string[] array)
+int CountSymbols(string[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -16,10 +16,23 @@ void CountSymbols(string[] array)
             count++;
         }
     }
-    System.Console.WriteLine(count);
+    return count;
 }
 
+void FilteredArray(string[] array)
+{
+    string[] filteredArray = new string[CountSymbols(array)];
+    int index = 0;
 
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            filteredArray[index] = array[i];
+            index++;
+        }
+    }
+}
 
 void PrintArray(string[] array)
 {
